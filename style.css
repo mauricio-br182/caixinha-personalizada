@@ -1,0 +1,27 @@
+body{
+    background: #090809;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    background: transparent;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.btn::before {
+    content: '';
+    position: absolute;
+    background:#f47968;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: all 5s ease;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
